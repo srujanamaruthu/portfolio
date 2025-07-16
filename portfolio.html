@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Srujana Maruthu | Portfolio</title>
+  <style>
+    :root {
+      --primary: #1e88e5;
+      --secondary: #64b5f6;
+      --light: #0d1117;
+      --dark: #ffffff;
+      --accent: #42a5f5;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: var(--light);
+      color: var(--dark);
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    #welcome {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      font-size: 2.5rem;
+      text-align: center;
+      padding: 40px;
+      transition: opacity 1s ease;
+    }
+
+    nav {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      padding: 20px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      background: linear-gradient(to right, #1a237e, #0d47a1);
+      color: var(--dark);
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .header-content {
+      flex: 1;
+      padding-right: 40px;
+      min-width: 300px;
+    }
+
+    .header-content h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .header-content h3 {
+      font-size: 1.6rem;
+      color: var(--secondary);
+    }
+
+    .profile-img {
+      flex: 0 0 auto;
+    }
+
+    .profile-img img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      border: 4px solid var(--dark);
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    }
+
+    section {
+      padding: 70px 30px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: var(--accent);
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 60px;
+      background-color: var(--primary);
+      margin-top: 10px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #121212;
+      border-radius: 15px;
+      padding: 25px;
+      box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+      border-left: 6px solid var(--accent);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-left-color: var(--primary);
+    }
+
+    .contact-info a {
+      display: block;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .contact-info a:hover {
+      color: var(--secondary);
+    }
+
+    footer {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      text-align: center;
+      padding: 30px;
+      color: white;
+      font-size: 1rem;
+    }
+
+    ul {
+      margin-left: 25px;
+      list-style: disc;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Welcome Message -->
+  <section id="welcome">
+    <div>
+      👋 Welcome to My Portfolio!<br/>
+      Explore my skills, projects, and journey below.
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav>
+    <div><strong>Srujana Portfolio</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#academics">Academics</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <h1>Hi, I'm Srujana Maruthu</h1>
+      <h3>🚀 Aspiring Software Developer | CSE Student</h3>
+    </div>
+    <div class="profile-img">
+      <img src="your-image.jpg" alt="Srujana Maruthu" />
+    </div>
+  </header>
+
+  <!-- About -->
+ <section id="about">
+  <h2>About Me</h2>
+  <p>
+    Hello! I’m Srujana Maruthu, an enthusiastic and detail-oriented Computer Science Engineering student driven by curiosity and a desire to solve real-world problems through code.
+  </p>
+  <p>
+    I love exploring new technologies and applying them in practical projects that make a difference. Whether it’s building a responsive website, working on machine learning models, or automating tasks with Python, I enjoy every step of the development process.
+  </p>
+  <p>
+    My goal is to grow into a full-stack developer with strong foundations in both front-end and back-end technologies, while also diving deeper into AI and Data Science. I'm a quick learner, passionate about building efficient, user-friendly applications.
+  </p>
+  <p>
+    When I'm not coding, I enjoy learning new tools, contributing to open-source projects, and staying up to date with the latest innovations in tech.
+  </p>
+</section>
+
+
+  <!-- Academics -->
+  <section id="academics">
+    <h2>Academic Background</h2>
+    <ul>
+      <li><strong>SRM AP UNIVERSITY B.Tech:</strong> Computer Science (Current) – Undergraduate</li>
+      <li><strong>Intermediate:</strong> Narayana Amaravati Campus, Vijayawada</li>
+      <li><strong>High School:</strong> Narayana High School, Bhavanipuram</li>
+    </ul>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card">C – Structured Programming</div>
+      <div class="card">C++ – Object-Oriented Programming</div>
+      <div class="card">Python – Scripting and AI</div>
+      <div class="card">HTML – Web Structure</div>
+      <div class="card">CSS – Styling and Layout</div>
+      <div class="card">JavaScript – Dynamic Web Interactions</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card"><strong>Hospital Management System</strong><p>Console-based system in C++ managing patient and staff data.</p></div>
+      <div class="card"><strong>Handwritten Digit Recognition</strong><p>AI model trained using MNIST to classify handwritten digits.</p></div>
+      <div class="card"><strong>AI-Powered PDF Summarizer</strong><p>NLP-based tool to summarize long PDF documents.</p></div>
+      <div class="card"><strong>ShopSmart – Shopping Website</strong><p>Responsive e-commerce website using HTML, CSS, and JS.</p></div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="grid">
+      <div class="card"><strong>Website Development</strong><p>Project-based HTML, CSS & JS course.</p></div>
+      <div class="card"><strong>Basics of Python</strong><p>Covered Python syntax and core concepts.</p></div>
+      <div class="card"><strong>C Programming</strong><p>Structured coding and memory management in C.</p></div>
+      <div class="card"><strong>C++ Programming</strong><p>Mastered OOP and STL fundamentals.</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <a href="mailto:srujanamaruthu@gmail.com">📧 srujanamaruthu@gmail.com</a>
+      <a href="tel:+919182443247">📞 +91 91824 43247</a>
+      <a href="https://github.com/srujanamaruthu" target="_blank">💻 GitHub Profile</a>
+      <a href="https://www.linkedin.com/in/srujana-maruthu-51a704288/" target="_blank">🔗 LinkedIn Profile</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Srujana Maruthu | All rights reserved.</p>
+  </footer>
+
+  <script>
+    setTimeout(() => {
+      const welcome = document.getElementById('welcome');
+      welcome.style.opacity = '0';
+      setTimeout(() => welcome.style.display = 'none', 1000);
+    }, 3000);
+  </script>
+
+</body>
+</html>
